@@ -7,5 +7,5 @@ This is a sample android bookstore app that has 5 main activities:
 * Search
 * Profile
 
-###Home:
+##Home:
 this activity contains a main slider, category chips, books sliders, category image sliders and banners that can dynamically generate from server.
