@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSize">12sp</dimen>
+    <dimen name="titleSize">14sp</dimen>
+    <dimen name="priceSize">12sp</dimen>
+    <dimen name="lastPriceSize">10sp</dimen>
+    <dimen name="locationSize">12sp</dimen>
+
+    <dimen name="mainSliderHeight">180dp</dimen>
+    <dimen name="miniSliderHeight">150dp</dimen>
+
+    <dimen name="editTextPadding">10dp</dimen>
+    <dimen name="editTextSize">12sp</dimen>
+    <dimen name="editText_height">38dp</dimen>
+
+    <!-- Buttons Sizes -->
+    <dimen name="button_width">160dp</dimen>
+    <dimen name="button_height">38dp</dimen>
+    <dimen name="button_padding">4dp</dimen>
+    <dimen name="button_textsize">14sp</dimen>
+    <dimen name="button_more_padding">2dp</dimen>
+    <dimen name="button_more_width">60dp</dimen>
+    <dimen name="button_more_height">28dp</dimen>
+    <dimen name="button_more_textsize">12sp</dimen>
+
+
+    <dimen name="chips_padding">6dp</dimen>
+    <dimen name="elevation">10dp</dimen>
+
+</resources>

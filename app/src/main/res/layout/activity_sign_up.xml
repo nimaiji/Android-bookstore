@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
+
+
+                <components.CustomEditText
+                    android:id="@+id/lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_white_back"
+                    android:hint="@string/lastname"
+                    android:textColor="@color/whiteTextColor"
+                    android:textColorHint="@color/whiteTextColor" />
+
+                <components.CustomEditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_white_back"
+                    android:hint="@string/name"
+                    android:textColor="@color/whiteTextColor"
+                    android:textColorHint="@color/whiteTextColor" />
+
+
+            </LinearLayout>
+
+            <components.CustomEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_white_back"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+
+            <components.CustomEditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_white_back"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+
+            <components.CustomEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_number"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_white_back"
+                android:drawableLeft="@drawable/ic_visibility_black_24dp"
+                android:drawableTint="#fff"
+                android:gravity="right"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+
+            <LinearLayout
+                android:id="@+id/layout_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <components.CustomTextView
+                    android:id="@+id/has_feed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/feed"
+                    android:textColor="@color/whiteTextColor"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/has_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:theme="@style/checkBoxStyle" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_feed"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <components.CustomButton
+                    android:id="@+id/already_have"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white"
+                    android:text="@string/already_have"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <components.CustomButton
+                    android:id="@+id/sign_up"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

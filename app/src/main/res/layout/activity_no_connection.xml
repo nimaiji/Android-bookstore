@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/no_wifi"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_signal_wifi_off_black_48dp"
+        android:tint="@color/colorPrimaryDark" />
+
+    <components.CustomTextView
+        android:id="@+id/no_wifi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_wifi"
+        android:textColor="@color/textColor"
+        android:text="@string/no_connection_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <components.CustomButton
+        android:id="@+id/retry"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/no_wifi_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/back_button"
+        android:padding="@dimen/button_padding"
+        android:text="@string/retry"
+        android:textColor="@drawable/text_button_style" />
+
+    <components.CustomButton
+        android:id="@+id/internet_setting"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_button"
+        android:padding="@dimen/button_padding"
+        android:text="@string/internet_setting"
+        android:textColor="@drawable/text_button_style" />
+
+
+</RelativeLayout>

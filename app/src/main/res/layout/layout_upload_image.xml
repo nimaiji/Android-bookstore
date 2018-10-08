@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:layout_margin="3dp"
+    android:background="#EEE">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <components.CustomTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@id/gallery"
+            android:text="@string/add_image"
+            android:textColor="#9E9E9E" />
+
+        <components.CustomButton
+            android:id="@+id/gallery"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_gray"
+            android:drawableRight="@drawable/ic_insert_photo_black_24dp"
+            android:drawableTint="#fff"
+            android:paddingRight="10dp"
+            android:text="@string/gallery"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/button_textsize" />
+
+        <components.CustomButton
+            android:id="@+id/camera"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/gallery"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_gray"
+            android:drawableRight="@drawable/ic_photo_camera_black_24dp"
+            android:drawableTint="#fff"
+            android:paddingRight="10dp"
+            android:text="@string/camera"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/button_textsize" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:layout_margin="3dp"
+    android:background="#EEE">
+
+
+        <components.CustomButton
+            android:id="@+id/camera"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_gray"
+            android:drawableRight="@drawable/ic_photo_camera_black_24dp"
+            android:drawableTint="#fff"
+            android:paddingRight="10dp"
+            android:text="@string/camera"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/button_textsize" />
+
+
+
+</RelativeLayout>

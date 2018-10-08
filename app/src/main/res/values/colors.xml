@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="colorPrimary">#FF9068</color>
+    <color name="colorPrimaryDark">#FD746C</color>
+    <color name="colorAccent">#FF9068</color>
+    <color name="lightGrey">#DDDDDD</color>
+
+    <color name="textColor">#9E9E9E</color>
+    <color name="whiteTextColor">#FFF</color>
+    <color name="editTextColor">#9E9E9E</color>
+    <color name="hintTextColor">#bdbdbd</color>
+    <color name="titleTextColor">#d5fd746c</color>
+
+    <!--Button Colors-->
+    <color name="whiteButtonColor">#FFF</color>
+
+</resources>

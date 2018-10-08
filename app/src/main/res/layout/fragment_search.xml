@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+    <RelativeLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_search"
+        android:elevation="2dp"
+        android:padding="2dp">
+
+        <components.CustomEditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/search_icon"
+            android:background="#FFF"
+            android:hint="@string/search"
+            android:textColor="@color/editTextColor"
+            android:textColorHint="@color/hintTextColor"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/ic_keyboard_voice_black_48dp"
+            android:tint="@color/colorPrimaryDark" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_box" />
+
+    <ImageView
+        android:id="@+id/search_book_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <components.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_book_img"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search_text"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/card_white">
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        tools:src="@tools:sample/avatars" />
+
+    <components.CustomTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:gravity="right"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Name Sample"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/titleSize"
+        tools:text="@tools:sample/full_names" />
+
+    <!--Todo: Add Location Icon-->
+    <ImageView
+        android:id="@+id/location_img"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/name"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_location_on_black_48dp"
+        android:tint="@color/colorPrimary" />
+
+    <components.CustomTextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/location_img"
+        android:layout_below="@id/name"
+        android:layout_marginTop="6dp"
+        android:text="shiraz"
+        android:textColor="@color/textColor"
+        tools:text="@tools:sample/cities" />
+
+    <components.CustomTextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/chips_gradient"
+        android:paddingBottom="1dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="1dp"
+        android:text="10,0000 Toman"
+        android:textColor="@color/whiteTextColor" />
+
+    <components.CustomTextView
+        android:id="@+id/originalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="15,000 Toman"
+        android:textColor="@color/textColor"
+        android:textSize="12sp" />
+
+</RelativeLayout>

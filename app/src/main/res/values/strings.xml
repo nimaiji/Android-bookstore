@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">debook</string>
+
+    // Activities
+    <string name="home">خانه</string>
+    <string name="category">دسته بندی</string>
+    <string name="timeline">فعالیت ها</string>
+    <string name="search">جستوجو</string>
+    <string name="profile">من</string>
+
+    // Other
+    <string name="loading">لطفا منتظر بمانید ...</string>
+    <string name="more">بیشتر</string>
+    <string name="all">همه</string>
+    <string name="send">ارسال</string>
+    <string name="currency">تومان</string>
+    <string name="send_email">ارسال ایمیل</string>
+
+    // Search
+    <string name="search_text">جستوجو بر اساس نام کتاب و نویسنده و ناشر و دسته بندی ...</string>
+    <string name="search_title">جستوجو ...</string>
+
+    // Timeline
+    <string name="timeline_title">فعالیت های من</string>
+    <string name="app_update">بروزرسانی دبوک</string>
+    <string name="app_update_text"></string>
+    <string name="new_message">پیام جدید!</string>
+    <string name="pending">در حال بررسی</string>
+    <string name="pending_message"></string>
+    <string name="increase_credit">افزایش اعتبار</string>
+
+    // Category
+    <string name="category_title">دسته بندی ها</string>
+
+    // Profile
+    <string name="profile_title">مشخصات من</string>
+    <string name="email">ایمیل</string>
+    <string name="phone_number">شماره تماس</string>
+    <string name="my_books">کتاب های من</string>
+    <string name="contact_us">ارتباط با ما</string>
+    <string name="change_password">تغییر رمز عبور</string>
+    <string name="about_us">درباره ما</string>
+    <string name="signin_signout">ثبت نام / ورود</string>
+
+    // About Us
+    <string name="version">نسخه</string>
+    <string name="version_state">وضعیت نسخه برنامه</string>
+    <string name="pandp">قوانین دبوک</string>
+
+    // SignIn and SignOut
+    <string name="username">نام کاربری</string>
+    <string name="password">رمز عبور</string>
+    <string name="forget_password">رمز عبور خود را فراموش کرده ام</string>
+    <string name="name">نام</string>
+    <string name="lastname">نام خانوادگی</string>
+    <string name="feed">عضو خبرنامه می شوم</string>
+    <string name="sign_in">ورود</string>
+    <string name="sign_out">خروج از حساب کاربری</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="already_have">حساب کاربری دارم</string>
+
+    // Sms Verification
+    <string name="sms_title">دریافت پیامک</string>
+    <string name="sms_loading">لطفا تا دریافت پیامک صبور باشید ...</string>
+    <string name="sms_retry">درخواست مجدد پیامک</string>
+
+    // Feedback
+    <string name="feedback_title">ارتباط با ما</string>
+    <string name="ticket_description">توضیحات</string>
+
+    // Add Book
+    <string name="add_book_title">ثبت کتاب</string>
+    <string name="add_image">اضافه کردن عکس</string>
+    <string name="camera">دوربین</string>
+    <string name="gallery">گالری</string>
+    <string name="book_info">مشخصات کتاب</string>
+    <string name="book_name">نام کتاب</string>
+    <string name="author">نویسنده یا نویسندگان</string>
+    <string name="translator">مترجم یا مترجمان</string>
+    <string name="print_year">سال چاپ</string>
+    <string name="edition">ویراست</string>
+    <string name="editor">ویراستار</string>
+    <string name="publisher">انتشارات</string>
+    <string name="book_category">دسته بندی</string>
+    <string name="add_category">انتخاب دسته بندی</string>
+    <string name="prices">قیمت ها</string>
+    <string name="price_warning">توجه شود که قیمت انتخابی باید مضربی از ۵۰۰۰ ﷼ باشد.</string>
+    <string name="quality">درجه کیفیت</string>
+    <string name="lot">زیاد</string>
+    <string name="little">مقداری</string>
+    <string name="nothing">هیچی</string>
+    <string name="location">موقعیت مکانی</string>
+    <string name="location_activity">آدرس ها</string>
+    <string name="description">توضیحات</string>
+
+    // Book Activity
+    <string name="book_author">نویسنده</string>
+    <string name="book_authors">نویسندگان</string>
+    <string name="book_translator">مترجم</string>
+    <string name="book_translators">مترجمان</string>
+    <string name="seller_info">مشاهده مشخصات فروشنده</string>
+
+    // User Rating
+    <string name="user_rating_title"></string>
+    <string name="rate_submit"></string>
+
+    // Change Password
+    <string name="new_password">رمز عبور جدید</string>
+    <string name="new_password_confirm">تکرار رمز عبور جدید</string>
+    <string name="password_submit">ثبت رمز عبور</string>
+
+    // User Info
+    <string name="user_info_title">مشخصات فروشنده</string>
+    <string name="fullname">نام و نام خانوادگی</string>
+    <string name="user_rate">امتیاز فروشنده</string>
+
+    // No Connection
+    <string name="no_connection_message">خطا در اتصال به اینترنت وجود دارد.</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="internet_setting">تنظیمات اینترنت</string>
+
+</resources>

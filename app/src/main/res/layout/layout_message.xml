@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/circle_gradient" />
+
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/card_white">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <components.CustomTitleView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:textColor="@color/titleTextColor"
+                tools:text="@string/new_message" />
+
+            <components.CustomButton
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_more_height"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/back_button"
+                android:textColor="@drawable/text_button_style"
+                android:textSize="@dimen/textSize"
+                tools:text="@string/app_update" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/header"
+            android:background="#EEE" />
+
+        <components.CustomTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            tools:text="@tools:sample/lorem/random" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

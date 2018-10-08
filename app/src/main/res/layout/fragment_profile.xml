@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_white"
+        android:id="@+id/info">
+
+        <components.CustomTitleView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/edit"
+            android:gravity="right"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/titleSize"
+            tools:text="@tools:sample/full_names" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_mode_edit_black_48dp"
+            android:tint="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fullName"
+            android:layout_marginBottom="10dp"
+            android:background="#EEE" />
+
+        <components.CustomTextView
+            android:id="@+id/email_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line1"
+            android:layout_marginRight="10dp"
+            android:text="@string/email"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/textSize" />
+
+        <components.CustomTextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/email_title"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            tools:text="Ijinima@gmail.com" />
+
+        <components.CustomTextView
+            android:id="@+id/phone_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/email"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/textSize" />
+
+        <components.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/phone_number_title"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            tools:text="09123456789" />
+
+    </RelativeLayout>
+
+    <components.BookList
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/back_button"
+        android:padding="@dimen/button_padding"
+        android:text="@string/signin_signout"
+        android:textColor="@drawable/text_button_style"
+        android:textSize="@dimen/button_textsize"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/us">
+
+        <components.CustomButton
+            android:id="@+id/about_us"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_button"
+            android:padding="@dimen/button_padding"
+            android:stateListAnimator="@null"
+            android:text="@string/about_us"
+            android:textColor="@drawable/text_button_style" />
+
+        <components.CustomButton
+            android:id="@+id/feedback"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_button"
+            android:padding="@dimen/button_padding"
+            android:stateListAnimator="@null"
+            android:text="@string/feedback_title"
+            android:textColor="@drawable/text_button_style" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_above="@id/us">
+
+    <components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/change_password"/>
+
+    <components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/sign_out"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

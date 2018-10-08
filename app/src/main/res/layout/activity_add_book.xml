@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--tools:layoutManager="android.support.v7.widget.LinearLayoutManager"-->
+    <!--tools:listitem="@layout/layout_upload_image"-->
+    <!--tools:orientation="horizontal"-->
+    <!--tools:reverse="true" />-->
+
+    <components.Header
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:headerTitle="@string/book_info" />
+
+    <components.SpecialEditText
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_back"
+        android:paddingRight="5dp"
+        app:hint="@string/book_name"
+        app:hintColor="@color/hintTextColor"
+        app:textColor="@color/textColor" />
+
+    <components.SpecialEditText
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_back"
+        android:paddingRight="5dp"
+        app:hint="@string/author"
+        app:hintColor="@color/hintTextColor"
+        app:textColor="@color/textColor" />
+
+    <components.SpecialEditText
+        android:id="@+id/translator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_back"
+        android:paddingRight="5dp"
+        app:hint="@string/translator"
+        app:hintColor="@color/hintTextColor"
+        app:textColor="@color/textColor" />
+
+    <components.SpecialEditText
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_back"
+        android:paddingRight="5dp"
+        app:hint="@string/publisher"
+        app:hintColor="@color/hintTextColor"
+        app:textColor="@color/textColor" />
+
+    <components.SpecialEditText
+        android:id="@+id/editor"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_back"
+        android:paddingRight="5dp"
+        app:hint="@string/editor"
+        app:hintColor="@color/hintTextColor"
+        app:textColor="@color/textColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <components.SpecialEditText
+            android:id="@+id/edition"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_back"
+            android:paddingRight="5dp"
+            app:hint="@string/edition"
+            app:hintColor="@color/hintTextColor"
+            app:textColor="@color/textColor" />
+
+        <components.SpecialEditText
+            android:id="@+id/print_year"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/editText_height"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_back"
+            android:paddingRight="5dp"
+            app:hint="@string/print_year"
+            app:hintColor="@color/hintTextColor"
+            app:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+
+
+
+    <components.Header
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerTitle="@string/book_category" />
+
+    <components.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_pressed"
+        android:drawableRight="@drawable/ic_add_circle_black_24dp"
+        android:drawableTint="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/add_category"
+        android:textColor="@color/whiteButtonColor"
+        android:textSize="@dimen/button_textsize" />
+
+    <components.Header
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerTitle="@string/prices" />
+
+    <components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="@string/price_warning"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+    <components.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_back"
+        android:drawableLeft="@drawable/ic_remove_circle_black_24dp"
+        android:drawableRight="@drawable/ic_add_circle_black_24dp"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textColor="@color/editTextColor"
+        tools:text="@string/currency" />
+
+    <components.Header
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerTitle="@string/quality" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_white">
+
+        <components.CustomTextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            tools:text="1/5" />
+
+        <components.CustomTextView
+            android:id="@+id/quality_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/number"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/next"
+            android:layout_toRightOf="@id/before"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            tools:text="@string/quality" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_navigate_next_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/before"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_navigate_before_black_24dp"
+            android:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_below="@id/quality_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <components.CustomButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_button"
+                android:text="@string/nothing"
+                android:textColor="@drawable/text_button_style" />
+
+            <components.CustomButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_button"
+                android:text="@string/little"
+                android:textColor="@drawable/text_button_style" />
+
+            <components.CustomButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_button"
+                android:text="@string/lot"
+                android:textColor="@drawable/text_button_style" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <components.Header
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerTitle="@string/location" />
+
+    <components.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_location_on_black_24dp"
+        android:drawableTint="@color/colorPrimary"
+        android:background="@drawable/card_white"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/textColor"
+        tools:text="@string/location"/>
+
+    <components.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

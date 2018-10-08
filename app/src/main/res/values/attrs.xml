@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CategoryList">
+        <attr name="categorySpanCount" format="integer" />
+        <attr name="categoryUrl" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MiniItemList">
+        <attr name="miniitemSpanCount" format="integer" />
+        <attr name="miniitemUrl" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BookList">
+        <attr name="bookSpanCount" format="integer" />
+        <attr name="bookUrl" format="string" />
+        <attr name="title" format="string" />
+        <attr name="more" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="bannerColor" format="color"/>
+        <attr name="bannerUrl" format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SpecialEditText">
+        <attr name="hint" format="string"/>
+        <attr name="hintColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="Header">
+        <attr name="headerTitle" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ItemPicker">
+        <attr name="itemPickerTitle" format="string"/>
+    </declare-styleable>
+
+</resources>
