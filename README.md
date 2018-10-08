@@ -1,4 +1,4 @@
-# Android Book Store :orange_book:
+# Android Bookstore :orange_book:
 > User friendly, Smooth, Android book store
 
 * Home
