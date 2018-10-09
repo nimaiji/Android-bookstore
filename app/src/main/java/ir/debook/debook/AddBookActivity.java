@@ -9,6 +9,7 @@ public class AddBookActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_book);
+        // hello
 
     }
 }
