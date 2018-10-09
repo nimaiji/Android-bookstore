@@ -1,3 +1,5 @@
+![TheBook Logo](image/thebook_logo_gradient.png)
+
 # Android Bookstore :orange_book:
 > User friendly, Smooth, Android book store
 
