@@ -29,5 +29,10 @@ public class CustomEditText extends AppCompatEditText {
         this.setPadding(padding, padding, padding, padding);
     }
 
+    public void CorrectPrice(){
+        float price = Float.parseFloat(this.getText().toString());
+        this.setText(price-(price%5000)+"");
+    }
+
 
 }
