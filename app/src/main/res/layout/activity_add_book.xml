@@ -122,8 +122,6 @@
     </LinearLayout>
 
 
-
-
     <components.Header
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -150,6 +148,18 @@
         android:layout_height="wrap_content"
         app:headerTitle="@string/prices" />
 
+    <components.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editText_height"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_back"
+        android:gravity="center"
+        android:hint="@string/original_price"
+        android:inputType="number" />
+
     <components.CustomTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -159,6 +169,7 @@
         android:textSize="@dimen/textSize" />
 
     <components.CustomEditText
+        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="@dimen/editText_height"
         android:layout_marginBottom="10dp"
@@ -170,8 +181,9 @@
         android:drawableRight="@drawable/ic_add_circle_black_24dp"
         android:drawableTint="@color/colorPrimaryDark"
         android:gravity="center"
-        android:textColor="@color/editTextColor"
-        tools:text="@string/currency" />
+        android:hint="@string/free"
+        android:inputType="number"
+        android:textColor="@color/editTextColor" />
 
     <components.Header
         android:layout_width="match_parent"
@@ -272,14 +284,14 @@
     <components.CustomTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/card_white"
+        android:drawablePadding="5dp"
         android:drawableRight="@drawable/ic_location_on_black_24dp"
         android:drawableTint="@color/colorPrimary"
-        android:background="@drawable/card_white"
-        android:layout_margin="8dp"
         android:padding="8dp"
-        android:drawablePadding="5dp"
         android:textColor="@color/textColor"
-        tools:text="@string/location"/>
+        tools:text="@string/location" />
 
     <components.CustomButton
         android:layout_width="match_parent"

@@ -84,6 +84,8 @@
     <string name="book_category">دسته بندی</string>
     <string name="add_category">انتخاب دسته بندی</string>
     <string name="prices">قیمت ها</string>
+    <string name="free">رایگان</string>
+    <string name="original_price">قیمت روی جلد</string>
     <string name="price_warning">توجه شود که قیمت انتخابی باید مضربی از ۵۰۰۰ ﷼ باشد.</string>
     <string name="quality">درجه کیفیت</string>
     <string name="lot">زیاد</string>
