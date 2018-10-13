@@ -1,5 +1,7 @@
-# Android Book Store :orange_book:
-This is a sample android bookstore app that has 5 main activities:
+![TheBook Logo](images/gradient_logo.png)
+
+# Android Bookstore :orange_book:
+> User friendly, Smooth, Android book store
 
 * Home
 * Category
@@ -7,19 +9,19 @@ This is a sample android bookstore app that has 5 main activities:
 * Search
 * Profile
 
-## Home:
+## Home
 this activity contains a main slider, category chips, books sliders, category image sliders and banners that can dynamically generate from server.
 
-## Category:
+## Category
 this activity contains a list of Category.
 
-## Archive:
+## Archive
 this activity contains a list of Messages (using MessageCore).
 
-## Search:
+## Search
 this activity contains recent searches, search box and microphone icon for speech to text.
 
-## Profile:
+## Profile
 this activity contains user 's full name, email, phone number, books and edit icon for edit all information.
 contact and about us buttons.
 sign out button.
